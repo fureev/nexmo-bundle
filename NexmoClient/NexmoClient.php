@@ -95,6 +95,7 @@ class NexmoClient {
             'to'=>$toNumber,
             'text'=>$text,
             'status-report-req'=>$status_report_req,
+            'type' => 'unicode',
         );
         $response = $this->jsonRequest('/sms/json',$params);
 
